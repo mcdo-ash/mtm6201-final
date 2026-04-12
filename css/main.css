@@ -46,3 +46,61 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body{
+	line-height: 1.2;
+	margin: 0 auto;
+	padding: 10px 50px;
+	max-width: 1200px;
+	background-color:#EAF0C4;
+}
+
+a{
+	text-decoration: none;
+	color:#FFFFFF;
+	background-color:#EC3E02;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+h1{
+	font-size: 1.4rem;
+}
+
+p{
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+.navbar{
+
+}
+
+.logoimg{
+	height:80px;
+}
+
+.bannerbox{
+	display:flex;
+	gap:10px;
+	background-color: #8DB97A;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.kanaimg{
+	height: 176px;
+	border-radius: 5px;
+}
+
+.bimage{
+	border: 2px solid black;
+	border-radius: 5px;
+	height: 180px
+}
+
+.bcontent{
+	background-color: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+	padding: 10px;
+}
