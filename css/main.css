@@ -50,7 +50,7 @@ table {
 body{
 	line-height: 1.2;
 	margin: 0 auto;
-	padding: 10px 50px;
+	padding: 0px 50px;
 	max-width: 1200px;
 	background-color:#EAF0C4;
 }
@@ -67,13 +67,23 @@ h1{
 	font-size: 1.4rem;
 }
 
+h2{
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 5px;
+}
+
 p{
 	font-size: 1rem;
 	margin-bottom: 10px;
 }
 
-.navbar{
+#donatebutton{
+	padding: 20px 50px;
+}
 
+.navbar{
+	background-color: #F0F4D5;
 }
 
 .logoimg{
@@ -86,6 +96,7 @@ p{
 	background-color: #8DB97A;
 	border: 2px solid black;
 	border-radius: 5px;
+	padding: 2px;
 }
 
 .kanaimg{
@@ -103,4 +114,69 @@ p{
 	background-color: rgba(0,0,0,0.5);
 	color: #FFFFFF;
 	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.stories{
+	display: grid;
+}
+
+.card{
+	border: 2px solid black;
+	margin-bottom: 50px;
+	padding: 20px;
+	background-color: #FAFFE9;
+}
+
+
+.cardimg{
+	height:316px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.cardcontent{
+	display: flex;
+	flex-direction: column;
+}
+
+.cardcontent a{
+	align-self:last baseline;
+	background-color: #FAFFE9;
+	color: black;
+}
+
+.image{
+	height: 320px;
+}
+
+.marco{
+	display:none;
+}
+
+.gina{
+	display:none;
+}
+
+#moresuccess{
+	padding: 30px;
+	text-align: center;
+}
+
+.footer ul{
+	display:flex;
+	gap: 5px;
+}
+
+footer{
+	background-color: #E0E8AF;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.footer ul li a{
+	background-color:#E0E8AF;
+	color: black;
+	padding: 0px;
 }
