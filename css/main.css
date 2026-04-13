@@ -165,8 +165,10 @@ p{
 	color: black;
 }
 
+
 .image{
 	height: 320px;
+	
 }
 
 .marco{
@@ -201,6 +203,8 @@ footer{
 
 .heroimg{
 	height:358px;
+	border: 2px solid black;
+	border-radius: 5px;
 }
 
 h1{
@@ -239,19 +243,24 @@ h1{
 }
 
 .carolina1{
-	display:flex;
-	flex-direction: column;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 
 .carolina1 a{
 	text-align: center;
-	align-self: baseline;
+	grid-column: 1/2;
+	align-self:center;
+	justify-self: center;
+	padding: 20px;
 }
 
 
 .carolina{
-	height:200px;
+	height:250px;
+	border: 2px solid black;
+	border-radius: 5px;
 }
 
 .carolinacontent{
@@ -263,7 +272,6 @@ h1{
 
 .carolinacontent h2{
 	text-decoration: underline;
-	text-align: left;
 }
 
 .eventcards{
@@ -285,8 +293,10 @@ h1{
 }
 
 .eventimages{
-	height:176px;
-	width: 250px;
+	width: 99%;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 20px;
 }
 
 .helpedcards{
