@@ -61,6 +61,9 @@ a{
 	background-color:#EC3E02;
 	padding: 5px;
 	border-radius: 5px;
+	font-family: "League Spartan";
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 h1{
@@ -79,9 +82,14 @@ h3{
 	text-decoration: underline;
 }
 
+h1, h2, h3{
+	font-family: "Luckiest Guy";
+}
+
 p{
 	font-size: 1rem;
 	margin-bottom: 10px;
+	font-family: "Konkhmer Sleokchher";
 }
 
 #donatebutton{
@@ -323,6 +331,7 @@ h1{
 
 .sofar h3{
 	text-decoration: none;
+	font-family: "Lobster"
 }
 
 .mondonate{
@@ -338,9 +347,10 @@ h1{
 
 .donbuttons a{
 	background-color: #9EB0C4;
-	text-decoration: underline;
 	padding: 10px;
 	border-radius: 30px;
+	font-family: "Lobster";
+
 }
 
 .productbutton{
