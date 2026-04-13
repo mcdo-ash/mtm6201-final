@@ -9,25 +9,43 @@
 </head>
 <body>
     <header>
-        <nav class="mnav">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">ADOPTIONS</a></li>
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">VOLUNTEER</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">DONATE</a></li>
-            </ul>
+       <nav class="navbar navbar-expand-lg">
+        <img class="logoimg" src="./images/pawsitiveheartrescuelogo.png" alt="">
+        <a id="donatebutton" href="donate.html">Donate</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adoptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Volunteer</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <h1>DONATE</h1>
+        <h2>HOW DO YOUR DONATIONS HELP ANIMALS IN NEED?</h2>
         <div class="helpedcards">
-            <h2>HOW DO YOUR DONATIONS HELP ANIMALS IN NEED?</h2>
-            <div class="card">
+            <div class="card card1">
                 <div class="image">
-
+                    <img class="donateimg" src="./images/donation.jpg" alt="">
                 </div>
                 <div class="cardcontent">
                     <p>With your
@@ -36,9 +54,9 @@
                     forever home</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card2">
               <div class="image">
-                    
+                    <img class="productimg" src="./images/product.jpg" alt="">
                 </div>
                 <div class="cardcontent">
                     <p>We had 11,467
@@ -49,9 +67,9 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card3">
                 <div class="image">
-                    
+                    <img class="raisedimg" src="./images/raised.jpg" alt="">
                 </div>
                 <div class="cardcontent">
                     <p>
@@ -66,11 +84,16 @@
         </div>
         <div class="mondonate">
             <h2>MONETARY DONATIONS</h2>
-            <a class="dbutton" href="#">2$</a>
-            <a class="dbutton" href="#">5$</a>
-            <a class="dbutton" href="#">10$</a>
-            <a class="dbutton" href="#">20$</a>
-            <a href="#">CUSTOM AMOUNT</a>
+            <div class="donbuttons">
+                <a class="dbutton" href="#">2$</a>
+                <a class="dbutton" href="#">5$</a>
+                <a class="dbutton" href="#">10$</a>
+                <a class="dbutton" href="#">20$</a>
+                <a href="#">CUSTOM AMOUNT</a>
+            </div>
+        </div>
+        <div class="productbutton">
+            <a href="#">I want to make product donations!</a>
         </div>
         <div class="productd">
             <h2>PRODUCT DONATIONS</h2>

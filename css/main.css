@@ -280,3 +280,79 @@ h1{
 	height:176px;
 	width: 250px;
 }
+
+.helpedcards{
+	display:grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr 1fr;
+	gap:10px;
+}
+.donateimg{
+	width:214px;
+}
+
+.productimg{
+	width:214px;
+	height:172px;
+}
+
+.raisedimg{
+	width:484px;
+}
+
+.card1{
+	grid-row: 1/2;
+	grid-column: 1/4;
+}
+
+.card2{
+	grid-row: 1/2;
+	grid-column: 4/7;
+}
+
+.card3{
+	grid-row: 2/3;
+	grid-column: 1/7;
+}
+
+.sofar{
+	background-color: rgba(0, 0, 0, 0.5);
+	color:#FFFFFF;
+	padding: 50px;
+}
+
+.sofar h3{
+	text-decoration: none;
+}
+
+.mondonate{
+	padding: 10px;
+}
+
+.donbuttons{
+	display:flex;
+	justify-content: center;
+	gap:30px;
+	margin-top: 10px;
+}
+
+.donbuttons a{
+	background-color: #9EB0C4;
+	text-decoration: underline;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.productbutton{
+	display:flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.productbutton a{
+	padding: 30px;
+}
+
+.productd{
+	display:none;
+}
