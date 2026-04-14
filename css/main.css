@@ -474,3 +474,26 @@ footer{
 	}
 }
 
+@media (min-width:1100px){
+	
+	h1{
+		font-size: 2.8rem;
+	}
+
+	h2{
+		font-size: 2.6rem;
+	}
+
+	a{
+		font-size: 1.5rem;
+	}
+
+	.gina{
+		display:inline;
+	}
+
+	.stories{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
