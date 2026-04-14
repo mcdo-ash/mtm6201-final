@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        <!-- hamburger bootstrap nav that changes when it gets to desktop screen size -->
        <nav class="navbar navbar-expand-lg">
         <img class="logoimg" src="./images/pawsitiveheartrescuelogo.png" alt="">
         <a id="donatebutton" href="donate.html">Donate</a>
@@ -43,92 +44,89 @@
         </nav>
     </header>
     <main>
+        <!-- headings left out of layout box since they don't need to be affected by the layout changes -->
         <h1>DONATE</h1>
         <h2>HOW DO YOUR DONATIONS HELP ANIMALS IN NEED?</h2>
-        <div class="helpedcards">
-            <div class="card card1">
+        <div class="donatelayout">
+            <!-- cards placed in div so they can be one area -->
+            <div class="helpedcards">
+                <!-- each card given overall class of card and specific card1,2 and 3 classes for their different stylings -->
+                <div class="card card1">
+                    <div class="image">
+                        <img class="donateimg" src="./images/donation.jpg" alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <p>With your
+                        donations, 4,328
+                        pets found their
+                        forever home!</p>
+                    </div>
+                </div>
+                <div class="card card2">
                 <div class="image">
-                    <img class="donateimg" src="./images/donation.jpg" alt="">
+                        <img class="productimg" src="./images/product.jpg" alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <p>We had 11,467
+                        product donations,
+                        feeding the hungry
+                        tummies of our
+                        animals!
+                        </p>
+                    </div>
                 </div>
-                <div class="cardcontent">
-                    <p>With your
-                    donations, 4,328
-                    pets found their
-                    forever home!</p>
-                </div>
-            </div>
-            <div class="card card2">
-              <div class="image">
-                    <img class="productimg" src="./images/product.jpg" alt="">
-                </div>
-                <div class="cardcontent">
-                    <p>We had 11,467
-                    product donations,
-                    feeding the hungry
-                    tummies of our
-                    animals!
-                    </p>
-                </div>
-            </div>
-            <div class="card card3">
-                <div class="image">
-                    <img class="raisedimg" src="./images/raised.jpg" alt="">
-                </div>
-                <div class="cardcontent">
-                    <p>
-                        Last year, we raised a total of $536,328! These donations help us feed, and care for our animals until they meet their forever family!
-                    </p>
+                <div class="card card3">
+                    <div class="image">
+                        <img class="raisedimg" src="./images/raised.jpg" alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <p>
+                            Last year, we raised a total of $536,328! These donations help us feed, and care for our animals until they meet their forever family!
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="sofar">
-            <h2>SO FAR THIS YEAR WE'VE RAISED:</h2>
-            <h3>$198,432!</h3>
-        </div>
-        <div class="mondonate">
-            <h2>MONETARY DONATIONS</h2>
-            <div class="donbuttons">
-                <a class="dbutton" href="#">2$</a>
-                <a class="dbutton" href="#">5$</a>
-                <a class="dbutton" href="#">10$</a>
-                <a class="dbutton" href="#">20$</a>
-                <a href="#">CUSTOM AMOUNT</a>
+            <!-- money raised in its own div for background color -->
+            <div class="sofar">
+                <h2>SO FAR THIS YEAR WE'VE RAISED:</h2>
+                <h3>$198,432!</h3>
             </div>
-        </div>
-        <div class="productbutton">
-            <a href="#">I want to make product donations!</a>
-        </div>
-        <div class="productd">
-            <h2>PRODUCT DONATIONS</h2>
-            <div class="rowone">
-                <h3>MOST NEEDED</h3>
-                <div class="product product1">
-                    <img src="./images/canindog.jpg" alt="can of royal canin dog food">
+            <!-- monetary donation options placed into div with div for the buttons inside inner div to manipulate the layout -->
+            <div class="mondonate">
+                <h2>MONETARY DONATIONS</h2>
+                <div class="donbuttons">
+                    <a class="dbutton" href="#">2$</a>
+                    <a class="dbutton" href="#">5$</a>
+                    <a class="dbutton" href="#">10$</a>
+                    <a class="dbutton" href="#">20$</a>
+                    <a class="dbutton" href="#">CUSTOM AMOUNT</a>
                 </div>
-                <div class="product product2">
-                    <img src="./images/canincat.jpg" alt="can of royal canin cat food">
-                </div>
-                <div class="product product3">
-                    <img src="./images/f4l.jpg" alt="fresh for life cat litter">
-                </div>
-                <div class="product product4">
-                    <img src="./images/perfnat.jpg" alt="bag of performatrin naturals dog food">
-                </div>
-                <a href="#">MORE PRODUCTS</a>
             </div>
-            <div class="rowtwo">
-                <h3>ALWAYS USEFUL</h3>
-                <div class="product product5">
-                    <img src="./images/mice.jpg" alt="mice cat toys">
+            <!-- product button that will be hidden on larger screens and show on mobile -->
+            <div class="productbutton">
+                <a href="#">I want to make product donations!</a>
+            </div>
+            <!-- product donations in divs for row one and two, this will be hidden on mobile and appear on tablet and desktop -->
+            <div class="productd">
+                <h2>PRODUCT DONATIONS</h2>
+                <!-- rows one and two are to adjust the layout from tablet to desktop -->
+                <div class="rowone">
+                    <h3>MOST NEEDED</h3>
+                        <img class="product product1" src="./images/canindog.jpg" alt="can of royal canin dog food">
+                        <img class="product product2" src="./images/canincat.jpg" alt="can of royal canin cat food">
+
+                        <img class="product product3" src="./images/f4l.jpg" alt="fresh for life cat litter">
+                        <img class="product product4" src="./images/perfnat.jpg" alt="bag of performatrin naturals dog food">
+                        <a href="#">MORE PRODUCTS</a>
                 </div>
-                <div class="product product6">
-                    <img src="./images/greenie.jpg" alt="greenie dental dog treats">
+                <div class="rowtwo">
+                    <h3>ALWAYS USEFUL</h3>
+                        <img class="product product5" src="./images/mice.jpg" alt="mice cat toys">
+                        <img class="product product6" src="./images/greenie.jpg" alt="greenie dental dog treats">
+                        <img class="product product7" src="./images/collar.jpg" alt="cat or dog collar">
+                        <img class="product product8" src="./images/brush.jpg" alt="pet brush">
+                        <a href="#">MORE PRODUCTS</a>
                 </div>
-                <div class="product product7">
-                    <img src="./images/collar.jpg" alt="cat or dog collar">
-                </div>
-                <div class="product product8"><img src="./images/brush.jpg" alt="pet brush"></div>
-                <a href="#">MORE PRODUCTS</a>
             </div>
         </div>
     </main>
@@ -146,5 +144,6 @@
         <p>©2026 Pawsitive Heart Rescue - All rights reserved</p>
     </footer>
 </body>
+<!-- java script for bootstrap menu to work -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
