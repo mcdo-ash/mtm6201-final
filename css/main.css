@@ -368,7 +368,7 @@ p{
 
 /* changes the style of the donation buttons to have different font to match dollars in money raised as well as a different color and more circular. */
 .donbuttons a{
-	background-color: #9EB0C4;
+	background-color: #3d444c;
 	padding: 10px;
 	border-radius: 30px;
 	font-family: "Lobster";
