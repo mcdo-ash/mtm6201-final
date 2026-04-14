@@ -68,6 +68,8 @@ a{
 /* mobile font sizes */
 h1{
 	font-size: 2.5rem;
+	text-align: center;
+	text-decoration: underline;
 }
 
 h2{
@@ -194,11 +196,6 @@ p{
 	height:358px;
 	border: 2px solid black;
 	border-radius: 5px;
-}
-
-h1{
-	text-align: center;
-	text-decoration: underline;
 }
 
 .eventheader{
@@ -422,7 +419,58 @@ footer{
 	}
 
 	.carolina{
+		height:300px;
+	}
+
+	.donateimg{
+		width:99%
+	}
+
+	.productimg{
+		height:99%;
 		width:99%;
+	}
+
+	.raisedimg{
+		width:99%;
+		height:99%
+	}
+
+	.productbutton{
+		display:none;
+	}
+
+	.productd{
+		display:grid;
+	}
+
+	.productd h3{
+		align-self:center;
+	}
+
+	.productd a{
+		justify-self: center;
+		align-self: center;
+	}
+
+	.product{
+		border: 2px solid black;
+		border-radius:5px;
+		height:150px;
+	}
+
+	.product img{
+		height: 145px;
+	}
+
+	.rowone{
+		display:flex;
+		gap:5px;
+	}
+
+	.rowtwo{
+		display:flex;
+		gap:5px;
 	}
 }
 
