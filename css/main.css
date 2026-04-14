@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* meyer reset added so that no default browser styles clash with my custom styling */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 
+/* body given a standard line height, margin and padding so its not touching the edges of the page a max width so it has a cutoff and the background color in the mockup. */
 body{
 	line-height: 1.2;
 	margin: 0 auto;
@@ -55,6 +56,7 @@ body{
 	background-color:#EAF0C4;
 }
 
+/* links turned into buttons with no underline, custom font from google fonts. */
 a{
 	text-decoration: none;
 	color:#FFFFFF;
@@ -83,29 +85,32 @@ h3{
 	text-align: center;
 	text-decoration: underline;
 }
-
+/* google fonts heading font */
 h1, h2, h3{
 	font-family: "Luckiest Guy";
 }
-
+/* google fonts paragraph font */
 p{
 	font-size: 1rem;
 	margin-bottom: 10px;
 	font-family: "Konkhmer Sleokchher";
 }
-
+/* donate button gets unique padding to make it stand out in navigation */
 #donatebutton{
 	padding: 20px 50px;
 }
-
+/* nav bar has slightly different background color than body */
 .navbar{
 	background-color: #F0F4D5;
+	border-bottom: 2px solid black;
 }
 
+/* logo image given specific height so it stays small within the nav bar */
 .logoimg{
 	height:80px;
 }
 
+/* banner on front page given flex so content flows left to right and can be manipulated easily */
 .bannerbox{
 	display:flex;
 	gap:10px;
@@ -115,17 +120,14 @@ p{
 	padding: 4px;
 }
 
+/* image given specific height and accounts for the border that will surround it */
 .kanaimg{
 	height: 176px;
-	border-radius: 5px;
-}
-
-.bimage{
 	border: 2px solid black;
 	border-radius: 5px;
-	height: 180px
 }
 
+/* the content for the kana section given background color in 0.5 opacity */
 .bcontent{
 	background-color: rgba(0,0,0,0.5);
 	color: #FFFFFF;
@@ -134,14 +136,17 @@ p{
 	border-radius: 5px;
 }
 
+/* since the first big heading on the page is "Meet Kana" it has been given h1 and so it needs to be aligned to the left since its normally centered. */
 .bcontent h1{
 	text-align: left;
 }
 
+/* stories section given grid for when page changes sizes and there is multiple cards */
 .stories{
 	display: grid;
 }
 
+/* card styles applied to all the stories cards so they stay consistent */
 .card{
 	border: 2px solid black;
 	margin-bottom: 50px;
@@ -149,7 +154,7 @@ p{
 	background-color: #FAFFE9;
 }
 
-
+/* cards given 99% width and height so they take up their given space in container, border and radius for consistent design. */
 .cardimg{
 	width:99%;
 	height: 99%;
@@ -157,23 +162,25 @@ p{
 	border-radius: 5px;
 }
 
+/* card content put in flex column so the content reads image on top and text underneath image. */
 .cardcontent{
 	display: flex;
 	flex-direction: column;
 }
 
+/* learn more buttons in cards background color changed to blend into card and given black text so you can read the text. Aligned to baseline so it is on the right rather than the left. */
 .cardcontent a{
 	align-self:last baseline;
 	background-color: #FAFFE9;
 	color: black;
 }
 
-
+/* image div given height so it takes up specific space in card. */
 .image{
 	height: 320px;
-	
 }
 
+/* marco and gina displayed none so they don't appear on mobile. */
 .marco{
 	display:none;
 }
@@ -182,8 +189,9 @@ p{
 	display:none;
 }
 
+/* success button inside div with minor adjustments to appearence and displayed flex to take up remaning room on bottom with flex grow*/
 .successbutton{
-		display:flex;
+	display:flex;
 }
 
 #moresuccess{
@@ -192,49 +200,53 @@ p{
 	flex-grow: 1;
 }
 
+/* hero image given specific height to ensure it has resonable space on page, given border and radius. */
 .heroimg{
 	height:358px;
 	border: 2px solid black;
 	border-radius: 5px;
 }
 
+/* event header has heading and cartoons, placed in flex so the images can sit on either side with gap spacing them apart. */
 .eventheader{
 	display:flex;
 	justify-content: center;
 	gap:80px
 }
 
-.eventheader h1{
-	align-self: center;
-}
-
+/* cartoons given specific height so they align nicely with the heading text */
 .lilpets{
 	height:100px;
 }
 
-.eventscon{
+/* bigbox grid for layout changes from mobile to tablet and desktop. */
+.bigbox{
 	display: grid;
 	gap: 10px;
 }
 
+/* textbox for general info given black background color with opacity at 0.5, color of text changed so its legible with some padding.*/
 .generalinfo{
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFFFFF;
 	padding: 10px;
 }
 
+
+/* some adjustments to gen info heading to make things fit nicely. */
 .generalinfo h2{
 	text-decoration: underline;
 	text-align: left;
 	padding-bottom: 5px;
 }
 
+/* carolina put into grid for content flow */
 .carolina1{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 }
 
-
+/* positioning for the button in carolina section with minor adjustments to appearence. */
 .carolina1 a{
 	text-align: center;
 	grid-column: 1/2;
@@ -243,13 +255,14 @@ p{
 	padding: 20px;
 }
 
-
+/* carolina picture given specific height for mobile, given the border and radius. */
 .carolina{
 	height:250px;
 	border: 2px solid black;
 	border-radius: 5px;
 }
 
+/* carolina content section given the same black background, given padding and put in grid for layout adjustments */
 .carolinacontent{
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFFFFF;
@@ -261,6 +274,7 @@ p{
 	text-decoration: underline;
 }
 
+/* event cards placed in grid layout */
 .eventcards{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
@@ -268,17 +282,20 @@ p{
 	padding: 10px;
 }
 
+/* event cards image and link in flex column so it reads image on top and link below */
 .ecardimg{
 	display:flex;
 	flex-direction: column;
 }
 
+/* centers the text under the event image */
 .ecardimg a{
 	background-color: #EAF0C4;
 	color: black;
 	align-self: center;
 }
 
+/* gives event images width 99% so they take up only amount of space needed rather than specific size, given margin top so there is some space between the text and the image */
 .eventimages{
 	width: 99%;
 	border: 2px solid black;
@@ -286,12 +303,15 @@ p{
 	margin-top: 20px;
 }
 
+/* donation page cards in grid so the layout can be in the 2 on top 1 on bottom layout with columns. */
 .helpedcards{
 	display:grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr 1fr;
 	gap:10px;
 }
+
+/* these images have been given specific dimensions because of how they interact with the grid thats been layed out. */
 .donateimg{
 	width:214px;
 }
@@ -304,7 +324,7 @@ p{
 .raisedimg{
 	width:484px;
 }
-
+/* placement of each card with grid */
 .card1{
 	grid-row: 1/2;
 	grid-column: 1/4;
@@ -320,21 +340,25 @@ p{
 	grid-column: 1/7;
 }
 
+/* so far money raised div given the same black background and extra padding so it sits in the center. */
 .sofar{
 	background-color: rgba(0, 0, 0, 0.5);
 	color:#FFFFFF;
 	padding: 50px;
 }
 
+/* the number of money raised given a different font family, underline removed and the font size increased so it is prominent. */
 .sofar h3{
 	text-decoration: none;
-	font-family: "Lobster"
+	font-family: "Lobster";
+	font-size: 2.7rem;
 }
 
 .mondonate{
 	padding: 10px;
 }
 
+/* donation buttons in flex for left to right layout and centered on the page. */
 .donbuttons{
 	display:flex;
 	justify-content: center;
@@ -342,14 +366,15 @@ p{
 	margin-top: 10px;
 }
 
+/* changes the style of the donation buttons to have different font to match dollars in money raised as well as a different color and more circular. */
 .donbuttons a{
 	background-color: #9EB0C4;
 	padding: 10px;
 	border-radius: 30px;
 	font-family: "Lobster";
-
 }
 
+/* product button on the bottom of page for mobile that would in theory displayed the products they don't initally load unless button is clicked. */
 .productbutton{
 	display:flex;
 	justify-content: center;
@@ -360,21 +385,33 @@ p{
 	padding: 30px;
 }
 
+/* hides the products that are displayed on tablet and desktop */
 .productd{
 	display:none;
 }
 
-.footer ul{
-	display:flex;
-	gap: 5px;
-}
-
+/* footer in flex for spacing of nav and copyright, background color is slightly darker, margin top given so the bottom element of each page isnt pushed right up against it. */
 footer{
+	display: flex;
+	gap: 15px;
 	background-color: #E0E8AF;
 	margin-top: 50px;
 	padding: 10px;
+	justify-content: space-evenly;
 }
 
+/* footer copyright text size changed to fit screen size better */
+footer p{
+	font-size: 0.5rem;
+}
+
+/* navigation of footer put in flex with left to right. */
+.footer ul{
+	display:flex;
+	gap: 8px;
+}
+
+/* links to pages style adjustments to blend nicely with the footer background */
 .footer ul li a{
 	background-color:#E0E8AF;
 	color: black;
@@ -384,6 +421,7 @@ footer{
 /* tablet style changes */
 @media (min-width:768px) {
 
+	/* tablet font size changes, h1  and h3 size still fit nicely so its unchanged. */
 	h2{
 		font-size: 2.2rem;
 	}
@@ -392,18 +430,17 @@ footer{
 		font-size:1.2rem;
 	}
 
+	/* Kana banner image changed to fit better in its container. */
 	.kanaimg{
 		height:250px;
 	}
 
-	.bimage{
-		height: 254px;
-	}
-
+	/* a little bit more padding to make it fit nicely on the screen */
 	.bannerbox a{
 		padding: 10px;
 	}
 
+	/* displays marco card alongside pluto on the tablet screen */
 	.marco{
 		display:inline;
 	}
@@ -413,22 +450,20 @@ footer{
 		gap: 5px;
 	}
 	
+	/* hero image on events size adjusted */
 	.heroimg{
 		width:99%;
 		height:99%
 	}
 
+	/* carolina image changed to fit better in its box */
 	.carolina{
 		height:300px;
 	}
 
+	/* makes images take up all their alotted space in their card */
 	.donateimg{
 		width:99%
-	}
-
-	.productimg{
-		height:99%;
-		width:99%;
 	}
 
 	.raisedimg{
@@ -436,33 +471,46 @@ footer{
 		height:99%
 	}
 
+	/* product images made to fit better in their boxes */
+	.productimg{
+		/* height:99%; */
+		width:99%;
+	}
+
+	/* makes the button for mobile not show up on tablet and up */
 	.productbutton{
 		display:none;
 	}
 
+	/* displays the products in grid */
 	.productd{
 		display:grid;
 	}
 
+	/* aligns product headings to be centered alongside products */
 	.productd h3{
 		align-self:center;
 	}
 
+	/* links in product section also aligned alongside products */
 	.productd a{
 		justify-self: center;
 		align-self: center;
 	}
 
+	/* product borders */
 	.product{
 		border: 2px solid black;
 		border-radius:5px;
 		height:150px;
 	}
 
+	/* products given specific height so they fit nicely in rows */
 	.product img{
 		height: 145px;
 	}
 
+	/* row one and two in flex so they read left to right */
 	.rowone{
 		display:flex;
 		gap:5px;
@@ -472,10 +520,23 @@ footer{
 		display:flex;
 		gap:5px;
 	}
+
+	/* footer font size adjusted */
+	footer p{
+		font-size: 0.7rem
+	}
+}
+
+@media (min-width: 992px){
+	/* breakpoint for boostrap, changes the donate button to be on the right */
+	#donatebutton{
+		order: 2;
+	}
 }
 
 @media (min-width:1100px){
 	
+	/* tablet font sizes */
 	h1{
 		font-size: 2.8rem;
 	}
@@ -488,12 +549,127 @@ footer{
 		font-size: 1.5rem;
 	}
 
+	.kanaimg{
+		height: 350px;
+	}
+
+	/* gina card added to the cards on home */
 	.gina{
 		display:inline;
 	}
 
+	/* makes three columns for the gina card thats now in the line */
 	.stories{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+
+	/* events page grid map for desktop layout */
+	.bigbox{
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-areas:
+		"eimg eimg eimg geninfo geninfo geninfo geninfo"
+		"caro caro caro ecards ecards ecards ecards";
+	}
+
+	/* specific height for carolina picture to fit desktop layout */
+	.carolina{
+		height: 180px;
+	}
+
+	/* gives the button a little more space between other elements */
+	.carolina1 a{
+		padding: 8px;
+		margin: 8px;
+	}
+
+	/* grid map areas defined */
+	.eventimage{
+		grid-area: eimg;
+	}
+
+	.generalinfo{
+		grid-area: geninfo;
+	}
+
+	.carolinacontent{
+		grid-area: caro;
+	}
+
+	/* this area is centered so it flows nicely*/
+	.eventcards{
+		grid-area: ecards;
+		align-self: center;
+	}
+	
+	/* grid map for donation desktop page  */
+	.donatelayout{
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas: 
+		"helpcards helpcards helpcards sofarr sofarr sofarr"
+		"helpcards helpcards helpcards monetary monetary monetary"
+		"helpcards helpcards helpcards proddon proddon proddon"
+		"helpcards helpcards helpcards proddon proddon proddon"
+		;
+		gap: 20px;
+	}
+
+	/* grid areas defined */
+	.helpedcards{
+		grid-area: helpcards;
+	}
+
+	/* centers area in the center of its defined area */
+	.sofar{
+		grid-area: sofarr;
+		align-self: center;
+	}
+
+	/* adjusts font-size to fit screen better */
+	.sofar h2{
+		font-size: 1.5rem
+	}
+
+	.mondonate{
+		grid-area: monetary;
+	}
+
+	/* donation buttons put in grid rather than flex to adjust for the way the desktop layout interacts with this area */
+	.donbuttons{
+		display:grid;
+		grid-template-columns: repeat(4, 1fr) 2fr;
+	}
+
+	/* puts buttons in the center and centers their text */
+	.dbutton{
+		align-self:center;
+		text-align: center;
+	}
+
+	.productd{
+		grid-area: proddon;
+	}
+
+	.productd h3{
+		font-size: 1rem;
+	}
+
+	.productd a{
+		font-size: 1rem;
+	}
+
+	/* product donation rows put into grid rather than flex to fit on desktop screen better with each images height and max width constraints changed */
+	.rowone, .rowtwo{
+		display:grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.product{
+		height: auto;
+		object-fit: cover;
+		max-width:100%;
+		align-self: center;
+	}
+
 }
 
