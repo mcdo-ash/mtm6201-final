@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- head links css file, as well as google fonts and bootstrap for the nav hamburger menu -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawsitive Heart Rescue</title>
@@ -12,9 +13,12 @@
 </head> 
 <body>
     <header>
+        <!-- boostrap hamburger menu class -->
         <nav class="navbar navbar-expand-lg">
         <img class="logoimg" src="./images/pawsitiveheartrescuelogo.png" alt="">
+        <!-- solo donate button added on its own outside of nav for mobile and tablet nav differences -->
         <a id="donatebutton" href="donate.html">Donate</a>
+        <!-- hamburger button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,10 +47,13 @@
         </nav>
     </header>
     <main>
+        <!-- first section given class of bannerbox in order to manipulate the layout inside with flex -->
         <div class="bannerbox">
+            <!-- images put into divs to move them when changing screen sizes -->
             <div class="bimage">
                 <img class="kanaimg" src="./images/kana.jpg" alt="Kana in a forest trail">
             </div>
+            <!-- content in div so it can be given the background box with the opacity down. -->
             <div class="bcontent">
                 <h1>Meet Kana!</h1>
                 <p>She is 3 years old and looking for her forever home!</p>
@@ -54,9 +61,11 @@
                 <a href="#">CLICK HERE</a>
             </div>
         </div>
+        <!-- success stories put into div for 1-3 card layouts on mobile-tablet and desktop -->
         <div class="success">
             <h2>Success Stories</h2>
             <div class="stories">
+                <!-- all cards given class of card to have the same styling -->
                 <div class="card">
                  <div class="image">
                     <img class="cardimg" src="./images/pluto.jpg" alt="pluto the dog">
@@ -71,6 +80,7 @@
                     <a href="#">LEARN MORE ></a>
                 </div>
             </div>
+            <!-- cards marco and gina given specific classes to make the appear and disappear -->
             <div class="card marco">
                 <div class="image">
                     <img class="cardimg" src="./images/marco.jpg" alt="marco the dog">
@@ -100,11 +110,13 @@
                 </div>
             </div>
             </div>
+            <!-- success button placed outside of cards so it can sit in bottom row -->
             <div class="successbutton">
                 <a id="moresuccess" href="#">MORE SUCCESS STORIES</a>
             </div>
         </div>
     </main>
+    <!-- footer with basic nav and copyright -->
     <footer>
         <nav class="footer">
             <ul>
