@@ -65,7 +65,7 @@ a{
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
+/* mobile font sizes */
 h1{
 	font-size: 2.5rem;
 }
@@ -110,7 +110,7 @@ p{
 	background-color: #8DB97A;
 	border: 2px solid black;
 	border-radius: 5px;
-	padding: 2px;
+	padding: 4px;
 }
 
 .kanaimg{
@@ -149,7 +149,8 @@ p{
 
 
 .cardimg{
-	height:316px;
+	width:99%;
+	height: 99%;
 	border: 2px solid black;
 	border-radius: 5px;
 }
@@ -179,26 +180,14 @@ p{
 	display:none;
 }
 
+.successbutton{
+		display:flex;
+}
+
 #moresuccess{
 	padding: 30px;
 	text-align: center;
-}
-
-.footer ul{
-	display:flex;
-	gap: 5px;
-}
-
-footer{
-	background-color: #E0E8AF;
-	margin-top: 50px;
-	padding: 10px;
-}
-
-.footer ul li a{
-	background-color:#E0E8AF;
-	color: black;
-	padding: 0px;
+	flex-grow: 1;
 }
 
 .heroimg{
@@ -240,6 +229,7 @@ h1{
 .generalinfo h2{
 	text-decoration: underline;
 	text-align: left;
+	padding-bottom: 5px;
 }
 
 .carolina1{
@@ -376,3 +366,63 @@ h1{
 .productd{
 	display:none;
 }
+
+.footer ul{
+	display:flex;
+	gap: 5px;
+}
+
+footer{
+	background-color: #E0E8AF;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.footer ul li a{
+	background-color:#E0E8AF;
+	color: black;
+	padding: 0px;
+}
+
+/* tablet style changes */
+@media (min-width:768px) {
+
+	h2{
+		font-size: 2.2rem;
+	}
+
+	p{
+		font-size:1.2rem;
+	}
+
+	.kanaimg{
+		height:250px;
+	}
+
+	.bimage{
+		height: 254px;
+	}
+
+	.bannerbox a{
+		padding: 10px;
+	}
+
+	.marco{
+		display:inline;
+	}
+
+	.stories{
+		grid-template-columns: 1fr 1fr;
+		gap: 5px;
+	}
+	
+	.heroimg{
+		width:99%;
+		height:99%
+	}
+
+	.carolina{
+		width:99%;
+	}
+}
+
